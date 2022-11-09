@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style></style>
+
+
+
+    <script>
+        function check() {
+            alert("click");
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <form action="form_ok.jsp" method="post" >
+        <h1>캠프 참가 신청서</h1>
+
+        <fieldset>
+            <legend><h4>참가자 정보</h4></legend>
+            이름 <input type="text" name="name">
+            <br>
+
+            성별 <input type="radio" name="gender" id="gender1" value="남성"> 남
+            <input type="radio" name="gender" id="gender2" value="여성"> 여
+            <br>
+
+            생일 <input type="date" max="2003-12-31" name="birthday">
+            <br><br>
+
+            학번 <input type="text" name="number">
+            <br>
+
+            학년 <input type="radio" id="grade1" name="grade" value="1"> 1학년
+            <input type="radio" id="grade2" name="grade" value="2"> 2학년
+            <input type="radio" id="grade3" name="grade" value="3"> 3학년
+            <input type="radio" id="grade4" name="grade" value="4"> 4학년
+            <br>
+
+            학부 <select name="department">
+                <option value="글로벌리더십학부">글로벌리더십학부</option>
+                <option value="국제어문학부">국제어문학부</option>
+                <option value="경영경제학부">경영경제학부</option>
+                <option value="법학부">법학부</option>
+                <option value="커뮤니케이션학부">커뮤니케이션학부</option>
+                <option value="공간환경시스템공학부">공간환경시스템공학부</option>
+                <option value="기계제어공학부">기계제어공학부</option>
+                <option value="콘텐츠융합디자인학부">콘텐츠융합디자인학부</option>
+                <option value="생명과학부">생명과학부</option>
+                <option value="전산전자공학부">전산전자공학부</option>
+                <option value="상담심리사회복지학부">상담심리사회복지학부</option>
+                <option value="ICT창업학부">ICT창업학부</option>
+                <option value="창의융합교육원">창의융합교육원</option>
+                <option value="AI융합교육원">AI융합교육원</option>
+            </select>
+            <br><br>
+
+            이메일&emsp; <input type="text" name="email">
+            <br>
+
+            전화번호 <input type="text" name="phone">
+            <br>
+
+            <label>주소&emsp;&emsp;</label>
+            <textarea name="address" cols="21" rows="3"></textarea>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend><h4>참가할 캠프 선택 (중복 가능)</h4></legend>
+            <input type="checkbox" name="camp1" value="1">한동 캠프
+            <br>
+            <input type="checkbox" name="camp2" value="1">글로벌 캠프
+            <br>
+        </fieldset>
+
+        <br><input type="submit" value="신청하기"><br>
+    </form>
+
+</body>
+</html>

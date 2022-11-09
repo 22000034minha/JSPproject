@@ -30,15 +30,20 @@
     <title>form_ok</title>
 </head>
 <body>
+
+    <h1>캠프 참가 신청 완료</h1>
     이름 : <%=name%><br>
     성별 : <%=gender%><br>
     생일 : <%=birthday%><br>
+    <br>
     학번 : <%=number%><br>
     학년 : <%=grade%><br>
     학부 : <%=department%><br>
+    <br>
     이메일 : <%=email%><br>
     전화번호 : <%=phone%><br>
     주소 : <%=address%><br>
+    <br>
     참가 신청한 캠프 : <%=camp%><br>
 
 </body>
